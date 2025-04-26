@@ -3,7 +3,7 @@ import '../styles/bootstrap.min.css'
 import '../styles/style.css'
 import { getServerSession } from 'next-auth';
 import { authOptions } from "./api/auth/[...nextauth]/route";
-import SessionWrapper from '../app/components/SessionWrapper';
+import SessionWrapper from '../app/components/SessionWrapper'; 
 import Script from 'next/script';
 
 export default async function RootLayout({ children }) {

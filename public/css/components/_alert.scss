@@ -1,0 +1,9 @@
+.alert {
+    line-height: 1.5;
+    &-success {
+        background-color: $success-light;
+        border: 1px solid $success-lightest;
+        color: $success;
+        font-weight: 500;
+    }
+}

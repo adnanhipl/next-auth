@@ -1,0 +1,62 @@
+@media(max-width:1490px){
+}
+
+@media(min-width:1200px){
+}
+
+@media(max-width:1199px){
+}
+
+@media(max-width:991px){
+
+    .login-wrapper .login-inner .login-content{
+        max-width: 320px;
+    }
+
+    .login-wrapper .login-inner .login-form .logo-drak {
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top: 15px;
+    }
+
+    .login-wrapper .login-inner .login-content .content-wrap{
+        padding: 0 15px;
+    }
+
+}
+
+@media(max-width:767px){
+    .login-wrapper .login-inner .login-content{
+        max-width: 270px;
+    }
+}
+
+@media(max-width:575px){
+    
+    .login-wrapper .login-inner .login-form .logo-drak{
+        display: none;
+    }
+
+    .login-wrapper .login-inner .login-content{
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .login-wrapper .login-inner{
+        flex-direction: column;
+    }
+
+    .login-wrapper .login-inner .login-form{
+        padding: 30px 20px 20px;
+    }
+}
+
+@media(max-width:400px){
+}
+
+@media(max-width:350px){
+    .login-wrapper .login-inner .login-form{
+        padding: 30px 15px 20px;
+    }
+}

@@ -1,0 +1,11 @@
+.animate__animated {
+    --animate-duration: 1.5s;
+  }
+
+.animate__animated.animate_delay{
+    --animate-delay: 3.9s;
+}
+
+.button-list{
+    --animate-delay: 1.5s !important; 
+}

@@ -1,0 +1,133 @@
+.card {
+    &-image {
+        overflow: hidden;
+        border-radius: 8px 8px 0 0;
+        img {
+            border-radius: 8px 8px 0 0;
+            max-height: 200px;
+            object-fit: cover;
+            width: 100%;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+        }
+        &:hover {
+            img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+    .card-description {
+        .card-title {
+            font-size: $spacing-06;
+            font-weight: 500;
+        }
+        .product-description {
+            line-height: 1.25;
+        }
+    }
+    .cardtags {
+        ul {
+            li {
+                min-height: 28px;
+                border-radius: 28px;
+                padding: 0 $spacing-04;
+                font-size: $spacing-04;
+                font-weight: 500;
+                &.bg-light-green {
+                    color: $success-medium;
+                }
+                &.bg-light-error {
+                    color: $pop;
+                }
+            }
+        }
+    }
+    .hashtags {
+        ul {
+            li {
+                a {
+                    color: $primary;
+                    &:hover {
+                        color: $primary-hover;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .card-buttons {
+        & > div {
+            flex: 1;
+            a {
+                font-weight: 500;
+                &:hover {
+                    background-color: $gray-medium-light;
+                }
+            }
+        }
+        .visit {
+            a {
+                color: $primary;
+            }
+        }
+        .bookmark {
+            a {
+                color: $gray-medium;
+                svg {
+                    path {
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+            &.active {
+                svg {
+                    path {
+                        fill: red;
+                        stroke: red;
+                    }
+                }
+                a {
+                    color: red;
+                    animation: like 0.5s 1;
+                }
+            }
+            &:hover {
+                svg {
+                    path {
+                        fill: red;
+                        stroke: red;
+                    }
+                }
+                a {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.grid-33 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@keyframes like {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

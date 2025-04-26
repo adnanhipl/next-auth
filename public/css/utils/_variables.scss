@@ -1,0 +1,52 @@
+// base font
+$base_font: 16px;
+
+/*Font family*/
+$font-stack: 'Poppins', sans-serif;
+$font-stack-heading: 'Poppins', sans-serif;
+
+/*neutral tone*/
+$white: #ffffff;
+$black: #1b1b1b;
+
+/*Brand tone*/
+$primary:#288c7a;
+$primary-hover: #166b5b;
+
+/*gray tone*/
+$gray-dark: #1e1e1e;
+$gray-medium: #555252;
+$gray-medium-light: #f1f1f1;
+$gray-light: #a8a8a8;
+$gray-lightest: #e8e8e8;
+$gray-border: #d5d4d4;
+$light-border:#5c5c5c66;
+
+/*notifications*/
+$success: #28a745;
+$success-medium: #42be65;
+$success-light: #defbe6;
+$success-lightest: #a6e0b7;
+$error: #da1e28;
+$error-medium: #fa4d56;
+$error-light: #ffc2c5;
+$warning: #f1c21b;
+$warning-light: #f1c21b;
+$pop: #ff832b;
+$pop-light: #ffe1cc;
+
+// spacing
+$spacing-01: 2px;
+$spacing-02: 4px;
+$spacing-03: 8px;
+$spacing-04: 12px;
+$spacing-05: 16px;
+$spacing-06: 24px;
+$spacing-07: 32px;
+$spacing-08: 40px;
+$spacing-09: 48px;
+$spacing-10: 64px;
+$spacing-11: 72px;
+$spacing-12: 96px;
+$spacing-13: 160px;
+

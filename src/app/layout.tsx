@@ -2,13 +2,12 @@ import './globals.css';
 import '../styles/bootstrap.min.css'
 import '../styles/style.css'
 import { getServerSession } from 'next-auth';
-import { authOptions } from "./api/auth/[...nextauth]/authOptions";
+import { route } from "./api/auth/[...nextauth]/route";
 import SessionWrapper from '../app/components/SessionWrapper'; 
 import Script from 'next/script';
-import type { ReactNode } from 'react';
 
-export default async function RootLayout({ children }: { children: ReactNode }) {
-  const session = await getServerSession(authOptions);
+export default async function RootLayout({ children }) {
+  const session = await getServerSession(route);
 
   return (
     <html lang="en">

@@ -73,7 +73,7 @@ export default function HomePage() {
                   <p>Welcome to Creation, please put your login credentials below to start using the web</p>
                 </div>
                 <div className="row form-block">
-                  {/* <div className="col-12 col-lg-12">
+                  <div className="col-12 col-lg-12">
                     <div className="form-fields-item mb-4">
                       <label>Email<span className="text-danger">*</span></label>
                       <div className="form-fields">
@@ -139,17 +139,17 @@ export default function HomePage() {
                     <Link href="" onClick={handleForgotPassword} className="link-pass">
                       Forgot Password?
                     </Link>
-                  </div> */}
+                  </div>
 
                   <div className="col-12 col-lg-12 mt-4">
-                    {/* <div className="form-group-btn">
+                    <div className="form-group-btn">
                       <button type="submit" onClick={handleLogin} className="btn btn-primary btn-regular w-100">
                         Sign in
                       </button>
                     </div>
                     <p className="account-now">
                       Don’t Have an Account? <a href="javascript:void(0)" id="pillSignUp">Sign Up Now!</a>
-                    </p> */}
+                    </p>
 
                     <div className="form-group-btn text-center me-auto ms-auto mt-5 w-fit">
                       <button type="button" onClick={gitLogin} className="btn btn-primary btn-regular w-auto text-white d-flex align-items-center justify-content-center">

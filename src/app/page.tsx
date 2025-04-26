@@ -4,6 +4,7 @@ import { signIn, useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import Home from "./home/page";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   const { data: session } = useSession();
@@ -56,7 +57,7 @@ export default function HomePage() {
             <div className="login-content">
               <div className="content-wrap">
                 <div className="logo">
-                  <img className="img-fluid" src="/images/logo-w.svg" alt="logo-w" />
+                  <Image src="/images/logo-w.svg" alt="Logo" width={50} height={50} />
                 </div>
                 <h2>Creation Next Js</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Libero praesentium consectetur impedit hic.</p>
@@ -64,7 +65,7 @@ export default function HomePage() {
             </div>
             <div className="login-form">
               <div className="logo-drak">
-                <img className="img-fluid" src="/images/logo-d.svg" alt="logo-d" />
+                <Image src="/images/logo-d.svg" alt="Logo" width={50} height={50} />
               </div>
               <form className="form_wrapper" onSubmit={e => e.preventDefault()}>
                 <div className="title-form">

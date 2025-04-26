@@ -4,6 +4,7 @@ import '../styles/style.css'
 import { getServerSession } from 'next-auth';
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import SessionWrapper from '../app/components/SessionWrapper';
+import Script from 'next/script';
 
 export default async function RootLayout({ children }) {
   const session = await getServerSession(authOptions);
@@ -14,6 +15,7 @@ export default async function RootLayout({ children }) {
         <SessionWrapper session={session}>
           {children}
         </SessionWrapper>
+        <Script src="/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );

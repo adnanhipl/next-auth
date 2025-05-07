@@ -11,10 +11,10 @@ export const route = {
     }),
     GoogleProvider({
         clientId: '980901939398-12g9ktsnfst40uq1jk1bdjpb868r04pn.apps.googleusercontent.com',
-        clientSecret: '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',
+        clientSecret: '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', 
     }),
     ]
 };
 
-const handler = NextAuth(route);
+const handler = NextAuth(route); 
 export { handler as GET, handler as POST };

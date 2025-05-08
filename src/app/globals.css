@@ -46,6 +46,7 @@
   background: #39ac31;
   color: #fff !important;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 .contant_box_404 {
   margin-top: -50px;
